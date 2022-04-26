@@ -1,0 +1,24 @@
+server:
+  port: 8081
+#  给项目加入前置路径
+#  servlet:
+#    context-path: /
+
+#spring:
+#给访问静态资源加一个res前缀。请求/zhifubao.png  ===>  /res/zhifubao.png
+#  mvc:
+#    static-path-pattern: /res/** # 这个会导致welcome page功能失效
+#改变默认静态资源路径
+#  web:
+#    resources:
+#      static-locations: classpath:/haha
+
+#Rest风格路径必须配置
+#spring:
+#  mvc:
+#    hiddenmethod:
+#      filter:
+#        enabled: true
+
+
+

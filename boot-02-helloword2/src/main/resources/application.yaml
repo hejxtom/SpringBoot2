@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+person:
+  boss: true
+  birth: 2019/12/9
+  age: 32
+  #  interests: [篮球，足球]
+  interests:
+    - 篮球
+    - 足球
+  animal: [ 阿猫，阿狗 ]
+  #  score:
+  #    english: 80
+  #    math: 90
+  score: { english:80,math:90 }
+  salarys: [ 9999,8888 ]
+  pet:
+    name: 阿狗
+    weight: 99
+  allPets:
+    sick:
+      - { name: 阿狗,weight: 98.9 }
+      - name: 阿猫
+        weight: 88.88
+    health:
+      - name: 啊冲
+        weight: 100
+  user-name: 张三
+#debug: true
