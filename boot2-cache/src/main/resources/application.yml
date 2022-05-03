@@ -1,11 +1,31 @@
+#更改服务端口号
 server:
   port: 8090
+#  配置数据库
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 1234
     url: 'jdbc:mysql://localhost:3306/spring_cache'
+  redis:
+    host: 127.0.0.1
 mybatis:
+#  mapper.xml的位置
   mapper-locations: classpath:mapper/**.xml
+#  取别名
   type-aliases-package: com.atguigu.cache.bean
+#日志打印
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  config: classpath:logback/logback-spring.xml
+#  level:
+#    com:
+#      atguigu:
+#        cache:
+#          mapper=debug
+#打印容器组件注册信息
+#debug: true
+
+
